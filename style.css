@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612738030_60-p-fon-sine-goluboi-abstraktsiya-74.jpg);
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 0.45fr 0.1fr;
+    grid-template-rows: 0.1fr 0.4fr 0.2fr;
+    grid-template-areas:
+        "head aside"
+        "main aside"
+        "footer footer";
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 27px;
+    grid-area: head;
+    color: #E9F1FA;
+    display:block;
+    text-align: center;
+    padding-top: 20px;
+    background-image: url(https://kartinkived.ru/wp-content/uploads/2021/11/sinij-fon.jpg);
+    border-radius: 10px;
+}
+main div {
+    width: 450px;
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: #A1FAF6;
+}
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    color: #A1FAF6;
+    padding-left: 20px;
+}
+aside {  
+    background-color: SteelBlue;
+    border-radius: 10px;
+}
+main {
+    grid-area: main;
+    background-image: url(https://celes.club/uploads/posts/2023-03/thumbs/1679512172_celes-club-p-fon-minimalizm-geometriya-instagram-97.png);
+    border-radius: 10px;
+}
+main.content div{
+    display:block;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+aside.right-side {
+    margin-top: 20px;
+    grid-area: aside;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    text-align: center;
+}
+button.menu {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 7px;
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: SteelBlue;
+}
+footer {
+    grid-area: footer;
+    background-image: url(https://sopranoclub.ru/images/70-fonov-sinego-tsveta/file44985.png);
+    border-radius: 10px;
+}
+button.menu a:hover {
+    color: cornflowerblue;
+    border: 1px #67DFDF solid;
+    background-color: beige;
+    border-radius: 4px;
+}
+li.contact a:hover {
+    color:cornflowerblue;
+    border: 1px #67DFDF solid;
+    background-color: beige;
+    border-radius: 4px;
+}
