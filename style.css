@@ -109,3 +109,11 @@ li.contact a:hover {
     background-color: beige;
     border-radius: 4px;
 }
+button.menu a {
+    color:cyan;
+    text-decoration: none;
+}
+li.contact a {
+    color:cyan;
+    text-decoration: none;
+}

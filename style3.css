@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a9bf0559208479.5a199c993986c.jpg);
+    background-repeat: no-repeat;
+    background-position: center 70px;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 0.05fr 0.94fr;
+    grid-template-areas:
+        "integration integration integration"
+        "footer space aside";
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+}
+.integration{
+    grid-area: integration;
+    padding-top: 20px;
+    text-align: center;
+}
+.space {
+    grid-area: space;
+}
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    color: black;
+    padding-left: 20px;
+}
+main {
+    grid-area: main;
+}
+aside.right-side {
+    grid-area: aside;
+}
+.right-side{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+}
+button.menu {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 7px;
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: steelblue;
+    color: #2BABCB;
+}
+button.menu a {
+    color: black;
+    text-decoration: none;
+}
+li.contact a {
+    color: black;
+    text-decoration: none;
+}
+
+button.menu a:hover {
+    color: cornflowerblue;
+    border: 1px #67DFDF solid;
+    background-color: beige;
+    border-radius: 4px;
+}
+li.contact a:hover {
+    color:cornflowerblue;
+    border: 1px #67DFDF solid;
+    background-color: beige;
+    border-radius: 4px;
+}
