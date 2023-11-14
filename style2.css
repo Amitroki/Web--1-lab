@@ -1,0 +1,136 @@
+html {
+    height: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(sources/backside.jpg);
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px 0.5fr 200px;
+    grid-template-rows: 90px 0.4fr 0.2fr;
+    grid-template-areas:
+        "header header header"
+        "aside1 main aside2"
+        "footer footer footer";
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: #A1FAF6;
+}
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    color: #A1FAF6;
+    padding-left: 20px;
+}
+header {
+    grid-area: header;
+    background-color: CornflowerBlue;
+    margin-top: 15px;
+    display: flex;
+    border-radius: 10px;
+}
+header div.photo {
+    width: 100px;
+    margin-right: 0;
+    margin-left: 10px;
+    flex-grow: 0;
+    align-self: center;
+}
+header div.info {
+    width: 1fr;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+    text-align: center;
+}
+aside {  
+    background-color: SteelBlue;
+    border-radius: 10px;
+}
+aside.left-side{
+    grid-area: aside1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+}
+.left-side div.photo{
+    margin: auto;
+    border-radius: 15px;
+    border: 3px #4676D7 solid;
+}
+.left-side p.text{
+    text-align: center;
+}
+.left-side p.homeland{
+    display: block;
+    text-align: center;
+}
+main{
+    grid-area: main;
+    background-color: SkyBlue;  
+    border-radius: 10px;
+}
+ul.list-grid {
+    display:block;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: 40px;
+    width: 600px;
+}
+aside.right-side {
+    grid-area: aside2;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    text-align: center;
+}
+button.menu {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 7px;
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: steelblue;
+    color: #2BABCB;
+}
+footer {
+    grid-area: footer;
+    background-image: url(https://sopranoclub.ru/images/70-fonov-sinego-tsveta/file44985.png);
+    border-radius: 10px;
+}
+button.menu a:hover {
+    color: cornflowerblue;
+    border: 1px #67DFDF solid;
+    background-color: beige;
+    border-radius: 4px;
+}
+li.contact a:hover {
+    color:cornflowerblue;
+    border: 1px #67DFDF solid;
+    background-color: beige;
+    border-radius: 4px;
+}
